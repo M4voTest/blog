@@ -3,6 +3,7 @@ from django.views import generic
 from . import models
 from django.shortcuts import redirect
 from django.http import Http404
+
 # Create your views here.
 
 
@@ -25,4 +26,4 @@ class DetailView(generic.DetailView):
 class AuthorView(generic.DetailView):
     template_name = 'blog/AuthorView.html'
     model = models.Author
-    #TODO podlinkowac autora w detailview, ustawic przypisanie artykułów do autora, obrazki
+    #TODO avatar
