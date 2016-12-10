@@ -3,7 +3,6 @@ from django.contrib.auth import get_user_model
 
 # Create your models here.
 
-#TODO to jest złe. Zmienic on_delete w Article
 def get_sentinel_user():
     return get_user_model().objects.get_or_create(username='deleted')[0]
 
@@ -11,6 +10,7 @@ class Author(models.Model):
     author_name = models.CharField(max_length=200)
     author_description = models.TextField()
     author_photo = models.ImageField(upload_to='authors')
+
 
     def __str__(self):
         return self.author_name
@@ -23,4 +23,3 @@ class Article(models.Model):
 
     def __str__(self):
         return self.article_title
-
