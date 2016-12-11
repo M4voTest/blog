@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.title{
+	height: 100px;
+	border: 2px solid black;
+	font-size: 30;
+	background-image: -webkit-linear-gradient(blue, white);
+	margin-bottom: 20px;
+	padding 10px;
+	text-align: center;
+}
+
+.article{
+	border: 2px solid black;
+	width: 1400px;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.right_side_bar{
+	width: 200px;
+	border: 2px solid black;
+	margin-top: 45px;
+	position: absolute;
+	top: 101px;
+	bottom: 0;
+	right: 0;
+}
+
+body {
+	background-image: -webkit-linear-gradient(white, blue);
+}
